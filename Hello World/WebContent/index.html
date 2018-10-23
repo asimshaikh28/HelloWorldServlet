@@ -7,7 +7,9 @@
 <body>
   <h1> This is index page</h1>
   <script>
-    document.write("Build no :");
+    var build_no=0;
+    buld_no=process.env.JENKINS_BUILDNO;
+    document.write("Build no :"+build_no);
   </script>
   
 </body>
